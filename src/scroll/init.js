@@ -148,7 +148,7 @@ export function initMixin(BScroll) {
   BScroll.prototype._handleOptions = function (options) {
     this.options = extend({}, DEFAULT_OPTIONS, options)
 
-    this.translateZ = this.options.HWCompositing && hasPerspective ? ' translateZ(0)' : ''
+    this.translateZ = this.options.HWCompositing && hasPerspective ? '' : ''
 
     this.options.useTransition = this.options.useTransition && hasTransition
     this.options.useTransform = this.options.useTransform && hasTransform
